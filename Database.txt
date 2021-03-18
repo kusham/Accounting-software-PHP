@@ -1,0 +1,49 @@
+CREATE DATABASE invoice;
+
+CREATE TABLE purchase_journal(
+    Dates date,
+    Invoice_Number varchar(5),
+    Supplier varchar(20),
+    Descriptions varchar(20),
+    Quantity varchar(20),
+    Unit_Price varchar(20),
+    Valu varchar(20),
+    PRIMARY KEY(Invoice_Number)
+);
+
+CREATE TABLE sales_journal(
+    Dates date,
+    Invoice_Number varchar(5),
+    Customer varchar(20),
+    Descriptions varchar(20),
+    Quantity varchar(20),
+    Unit_Price varchar(20),
+    Valu varchar(20),
+    PRIMARY KEY(Invoice_Number)
+);
+
+
+CREATE TABLE purchase_return_journal(
+    Dates date,
+    Debit_Number varchar(5),
+    Supplier varchar(20),
+    Descriptions varchar(20),
+    Quantity varchar(20),
+    Unit_Price varchar(20),
+    Valu varchar(20),
+    PRIMARY KEY(Debit_Number)
+);
+
+
+CREATE TABLE sales_return_journal(
+    Dates date,
+    Credit_Number varchar(5),
+    Customer varchar(20),
+    Descriptions varchar(20),
+    Quantity varchar(20),
+    Unit_Price varchar(20),
+    Valu varchar(20),
+    PRIMARY KEY(Credit_Number)
+);
+
+
